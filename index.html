@@ -8,9 +8,22 @@
 	<meta name="keywords" content="shape up, work out, cardio, strength, stress, diet">
 	<meta name="author" content="Kayla Rivera">
 
-	<link rel="icon" href="images/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+		});
+	</script>
+
 	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
 	<link rel="stylesheet" href="styles/main.css">
+
+	<link rel="icon" href="images/favicon.ico">
+
 
 	<title>Shape Up!</title>
 </head>
@@ -28,6 +41,7 @@
 
 
 	<!-- Navigation Bar -->
+	<nav id="mobilemenu"></nav>
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -52,7 +66,7 @@
 
 
 	<main>
-		<aside>
+		<aside id="left">
 			<nav id="nav_list">
 				<h2>Additional Resources</h2>
 				<ul>

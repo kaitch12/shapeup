@@ -112,7 +112,7 @@ Vertical Nav Menu
 #nav_list h2 {
     margin: 25px 0;
     text-align: center;
-    color: maroon;
+    color: steelblue;
 }
 
 #nav_list ul {
@@ -159,9 +159,7 @@ Vertical Nav Menu
     box-shadow: 2px 2px 8px 2px gray;
 }
 
-/* ------------------------------------------------------
-Main
----------------------------------------------------------- */
+/* Main--------------------------------------------------------- */
 
 main {
     display: flex
@@ -239,7 +237,7 @@ section h4 a:hover {
 #right h2 {
     font-size: 140%;
     margin: 25px 0;
-    color: maroon;
+    color: steelblue;
 }
 
 #right h3 {
@@ -263,4 +261,62 @@ footer {
 footer p {
     padding: 20px 0;
     font-variant: small-caps;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+/* Media Query------------------------------------------------------------------- */
+
+@media only screen and (max-width: 933px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    #left {
+        order: 2;
+        flex: 0 1 90%;
+        flex-direction: row;
+    }
+    section {
+        flex: 0 1 70%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobilemenu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: steelblue;
+    }
+    #mobilemenu a {
+        color: white;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    main {
+        flex-direction: column;
+    }
+    section, aside {
+        max-width: 95%;
+    }
+    #right {
+        order: 3;
+
+    }
+}
+
+@media only screen and (max-width: 479px) {
+header  {
+    flex-direction: column;
+}
 }
